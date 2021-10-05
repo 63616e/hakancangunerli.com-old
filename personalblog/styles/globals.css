@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.red-c-a{
+  color: #A31F34;
+}
+.gray-n{
+  color: #8A8B8C;
+}
+
+.rect {
+  display: inline-block;
+  height: 50px; /*sets height of element*/
+  border: 1px solid #124699; /*sets border of element*/
+  transition: all 0.6s; /*sets a transition (for hover effect)*/
+  padding-left: 20px; /*sets 'padding'*/
+  padding-right: 20px; /*sets 'padding'*/
+  /* line-height: 50px; for this, it sets vertical alignment */
+
+}
+.rect:hover {
+  background: #124699; 
+}
+
+
+
+
+
