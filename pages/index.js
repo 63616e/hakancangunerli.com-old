@@ -7,8 +7,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { Popover } from "@headlessui/react";
 
-
-const bruh = `<script>var example = ['hello', 'merhaba!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
+const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 
 const navigation = [
   { name: "Education", href: "#" },
@@ -46,7 +45,6 @@ export default function Home() {
                         <a
                           key={item.name}
                           href={item.href}
-                          
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
@@ -92,14 +90,7 @@ export default function Home() {
                     >
                       <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                           
-                            >
-                              Your Profile
-                            </a>
-                          )}
+                          {({ active }) => <a href="#">Your Profile</a>}
                         </Menu.Item>
                         <Menu.Item>
                           {({ active }) => (
@@ -115,14 +106,7 @@ export default function Home() {
                           )}
                         </Menu.Item>
                         <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              
-                            >
-                              Sign out
-                            </a>
-                          )}
+                          {({ active }) => <a href="#">Sign out</a>}
                         </Menu.Item>
                       </Menu.Items>
                     </Transition>
@@ -137,7 +121,6 @@ export default function Home() {
                   <a
                     key={item.name}
                     href={item.href}
-                    
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
@@ -149,20 +132,20 @@ export default function Home() {
         )}
       </Disclosure>
 
-      <div style={{ float: "left" }}>
+      <div style={{ float: "left", padding: "40px", background: "lightgray" }}>
         <form class="w-full max-w-lg">
-          {/* <div class="flex flex-wrap -mx-3 mb-6"> */}
           <div class="w-full px-3 mb-6 md:mb-0">
             <b style={{ fontSize: "16px" }}>
               Explore websites people and locations
             </b>
+            {/* shadow */}
+
             <input
               class="text-gray-700 border border-red-500 rounded py-3 px-4 mb-10 leading-tight focus:outline-none focus:bg-white"
               type="text"
               placeholder="What are you looking for?"
             />
           </div>
-          {/* </div> */}
         </form>
 
         <div class="flex">
@@ -172,7 +155,7 @@ export default function Home() {
             <li>_current students</li>
             <li>_faculty & staff</li>
             <li>_alumni</li>
-            <li>_Covid-19 and MIT</li>
+            <li>_Covid-19</li>
             <li>_all resources</li>
           </ul>
         </div>
@@ -205,19 +188,21 @@ export default function Home() {
         </div>
 
         <div>
-          <div style={{ margin: "50px", textAlign: "left" }}>
+          <div
+            style={{ margin: "50px", textAlign: "left", background: "#A31F34" }}
+          >
             <footer>
               <b>Hakan Can Gunerli</b>
               <br />
               100 Fox Rd, Athens,GA,USA <br />
-              <a href="https://example.com">Visit </a>
-              <a href="https://example.com">Map </a>
-              <a href="https://example.com">Events </a>
-              <a href="https://example.com">People </a>
-              <a href="https://example.com">Career </a>
-              <a href="https://example.com">Contact </a>
-              <a href="https://example.com">Privacy </a>
-              <a href="https://example.com">Accessibility </a>
+              <a href="https://example.com"><u>Visit</u></a>
+              <a href="https://example.com"><u>Map</u> </a>
+              <a href="https://example.com"><u>Events</u> </a>
+              <a href="https://example.com"><u>People</u> </a>
+              <a href="https://example.com"><u>Career</u> </a>
+              <a href="/contact"><u>Contact</u> </a>
+              <a href="/privacy"><u>Privacy</u> </a>
+              <a href="https://example.com"><u>Accessibility</u> </a>
               <br />
             </footer>
           </div>
@@ -243,7 +228,9 @@ export default function Home() {
                   <div className="sm:text-center lg:text-left">
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                       <span className="block text-indigo-600 xl:inline">
-                        <div dangerouslySetInnerHTML={{ __html: bruh }} />
+                        <div
+                          dangerouslySetInnerHTML={{ __html: salutations }}
+                        />
                       </span>
                     </h1>
                     <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

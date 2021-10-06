@@ -57,5 +57,6 @@ main {
 }
 
 
-
-
+.shadow{
+  box-shadow: 5px 5px;
+}
