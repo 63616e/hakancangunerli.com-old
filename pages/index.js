@@ -7,9 +7,6 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { Popover } from "@headlessui/react";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const bruh = `<script>var example = ['hello', 'merhaba!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 
