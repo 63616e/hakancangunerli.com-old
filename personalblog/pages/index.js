@@ -11,7 +11,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
+const bruh = `<script>var example = ['hello', 'merhaba!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 
 const navigation = [
   { name: "Education", href: "#" },
@@ -239,10 +239,6 @@ export default function Home() {
               <a href="https://example.com">Accessibility </a>
               <br />
             </footer>
-
-           
-         
-
           </div>
         </div>
       </div>
@@ -266,7 +262,7 @@ export default function Home() {
                   <div className="sm:text-center lg:text-left">
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                       <span className="block text-indigo-600 xl:inline">
-                        Porfolio website
+                        <div dangerouslySetInnerHTML={{ __html: bruh }} />
                       </span>
                     </h1>
                     <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
