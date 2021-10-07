@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import ReactTooltip from 'react-tooltip';
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
@@ -234,18 +234,17 @@ export default function Home() {
                       </span>
                     </h1>
                     <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was popularised in the
-                      1960s with the release of Letraset sheets containing Lorem
-                      Ipsum passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum.
+                    Artificial intelligence has great potential to advance medical care, but patient privacy is a top concern. Technology developed by Secure AI Labs, co-founded by Anne Kim ’16, SM ’17, lets AI algorithms run on encrypted datasets that never leave the data owner’s system.
+                    
                     </p>
+                    
+
+                   
+<ReactTooltip delayHide={1000} backgroundColor='#000000' effect='solid' html={true} />
+<a data-tip='<a href="https://web.mit.edu"> web.mit.edu</a>'  >test hover system</a>
+
+
+
                   </div>
                 </main>
               </div>
