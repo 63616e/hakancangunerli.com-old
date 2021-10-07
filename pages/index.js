@@ -19,7 +19,7 @@ const navigation = [
 export default function Home() {
   return (
     <>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="bg-white-800">
         {({ open }) => (
           <>
             <div className=" mx-auto px-2 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ export default function Home() {
                   {/* Profile dropdown */}
                   <Menu as="div" className="ml-3 relative">
                     <div>
-                      <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                      <Menu.Button className="bg-white-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                         <span className="sr-only">Open user menu</span>
                         <svg
                           class="site-nav__search-icon site-nav__search-icon--open"
