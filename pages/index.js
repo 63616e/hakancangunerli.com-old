@@ -242,7 +242,7 @@ export default function Home() {
                    
 <ReactTooltip delayHide={1000} backgroundColor='#000000' effect='solid' html={true} />
 <a data-tip='<a href="https://web.mit.edu"> web.mit.edu</a>'  >test hover system</a>
-
+{/* TODO: HYPERLINK FUNCTIONALITY */}
 
 
                   </div>
