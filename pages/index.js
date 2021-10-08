@@ -162,9 +162,10 @@ export default function Home() {
             <li>_all resources</li>
           </ul>
         </div>
-
+<br></br>
         <div>
           <div className="flex">
+            <Link href="https://web.mit.edu/building-a-better-world/">
             <span className="rect">
               Join us in
               <svg
@@ -187,6 +188,7 @@ export default function Home() {
               </svg>{" "}
               building a better world
             </span>
+            </Link>
           </div>
         </div>
 
@@ -198,16 +200,17 @@ export default function Home() {
               <b>Hakan Can Gunerli</b>
               <br />
               100 Fox Rd, Athens,GA,USA <br />
-              <a href="https://example.com"><u>Visit</u></a>
-              <a href="https://example.com"><u>Map</u> </a>
+              <a href="https://example.com"><u>Visit</u> </a>
+              <a href="https://example.com"><u> Map</u> </a>
               <a href="https://example.com"><u>Events</u> </a>
               <a href="https://example.com"><u>People</u> </a>
+              <br></br>
               <a href="https://example.com"><u>Career</u> </a>
               <Link href="/contact.js">
-                <a>Contact</a> 
+                <a><u>Contact</u> </a> 
                 </Link>
               <Link href="/privacy">
-                <a>Privacy</a> 
+                <a><u>Privacy</u> </a> 
                 </Link>
               <a href="https://example.com"><u>Accessibility</u> </a>
               <br />
