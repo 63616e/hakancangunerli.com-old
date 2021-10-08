@@ -15,6 +15,7 @@ const navigation = [
   { name: "Research", href: "/research" },
   { name: "Innovation", href: "/innovation" },
   { name: "About cna", href: "/about" },
+  { name: "Resume/CV", href: "/resume" },
 ];
 
 export default function Navinav() {

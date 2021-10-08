@@ -151,22 +151,17 @@ export default function Home() {
                         />
                       </span>
                     </h1>
-                    <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                      heyo, I'm John! I'm a student at the University of Georgia
-                      with a double emphasis in Artificial Intelligence and Data
-                      Science. I've been in the CS ecosystem since 2016, and
-                      interned at Forbes 500 companies as well as various
-                      startups. I have taken various positions at bunch of
-                      places, still looking for extra jobs to get my creative
-                      juices flowing. I served at: Peero, a startup I held the
-                      Head of Product position for 8 months, theCoderschool, an
-                      after school academy where I worked at a Course Instructor
-                      for 2 years and tal-labs, a startup I have established
-                      with some of the best engineers the state of Georgia has
-                      to offer. ...and many other projects I am not allowed to
-                      disclose. yet. I'm pretty active here on LinkedIn, so
-                      please feel free to DM or shoot me an email at
-                      hakancangunerli at protonmail dot com.
+                    <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                      <span>
+                      heyo, I am John! I'm a student at the University of
+                        Georgia with a double emphasis in Artificial
+                        Intelligence and Data Science. I've been in the CS
+                        ecosystem since 2016, and interned at Forbes 500
+                        companies as well as various startups. I have taken
+                        various &nbsp; &nbsp;positions at bunch of places, still
+                        looking for extra jobs to get my creative juices
+                        flowing. You can get more info about that in my CV/Resume section. 
+                      </span>
                     </p>
 
                     <ReactTooltip
