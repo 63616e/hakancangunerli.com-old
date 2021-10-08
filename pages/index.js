@@ -6,6 +6,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 import { Popover } from "@headlessui/react";
+import Link from "next/link";
 
 const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 
@@ -60,13 +61,13 @@ export default function Home() {
                       <Menu.Button className="bg-white-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                         <span className="sr-only">Open user menu</span>
                         <svg
-                          class="site-nav__search-icon site-nav__search-icon--open"
+                          className="site-nav__search-icon site-nav__search-icon--open"
                           width="26"
                           viewBox="0 0 23 22"
                         >
                           <g
                             stroke="currentColor"
-                            stroke-width="1.5"
+                            strokeWidth="1.5"
                             fill="none"
                           >
                             <circle
@@ -133,22 +134,22 @@ export default function Home() {
       </Disclosure>
 
       <div style={{ float: "left", padding: "40px", background: "lightgray" }}>
-        <form class="w-full max-w-lg">
-          <div class="w-full px-3 mb-6 md:mb-0">
+        <form className="w-full max-w-lg">
+          <div className="w-full px-3 mb-6 md:mb-0">
             <b style={{ fontSize: "16px" }}>
               Explore websites people and locations
             </b>
             {/* shadow */}
 
             <input
-              class="text-gray-700 border border-red-500 rounded py-3 px-4 mb-10 leading-tight focus:outline-none focus:bg-white"
+              className="text-gray-700 border border-red-500 rounded py-3 px-4 mb-10 leading-tight focus:outline-none focus:bg-white"
               type="text"
               placeholder="What are you looking for?"
             />
           </div>
         </form>
 
-        <div class="flex">
+        <div className="flex">
           <ul>
             Top resources for
             <li>_prospective students</li>
@@ -161,7 +162,7 @@ export default function Home() {
         </div>
 
         <div>
-          <div class="flex">
+          <div className="flex">
             <span className="rect">
               Join us in
               <svg
@@ -169,13 +170,13 @@ export default function Home() {
                 width="13"
                 height="13"
                 viewBox="0 0 16 16"
-                class="arrow-northeast site-footer__join-us-icon"
+                className="arrow-northeast site-footer__join-us-icon"
               >
                 <g
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   stroke="currentColor"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   transform="translate(1 1)"
                 >
                   <polyline points="3 0 14 0 14 11"></polyline>
@@ -200,8 +201,8 @@ export default function Home() {
               <a href="https://example.com"><u>Events</u> </a>
               <a href="https://example.com"><u>People</u> </a>
               <a href="https://example.com"><u>Career</u> </a>
-              <a href="/contact"><u>Contact</u> </a>
-              <a href="/privacy"><u>Privacy</u> </a>
+              <Link href="/contact"><u>Contact</u> </Link>
+              <Link href="/privacy"><u>Privacy</u> </Link>
               <a href="https://example.com"><u>Accessibility</u> </a>
               <br />
             </footer>
