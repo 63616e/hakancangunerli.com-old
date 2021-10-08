@@ -201,8 +201,12 @@ export default function Home() {
               <a href="https://example.com"><u>Events</u> </a>
               <a href="https://example.com"><u>People</u> </a>
               <a href="https://example.com"><u>Career</u> </a>
-              <Link href="/contact"><u>Contact</u> </Link>
-              <Link href="/privacy"><u>Privacy</u> </Link>
+              <Link href="/contact.js">
+                <a>Contact</a> 
+                </Link>
+              <Link href="/privacy">
+                <a>Privacy</a> 
+                </Link>
               <a href="https://example.com"><u>Accessibility</u> </a>
               <br />
             </footer>

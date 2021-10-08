@@ -35,14 +35,14 @@ a {
   display: inline-block;
   height: 86px; /*sets height of element*/
   width: 123px; /*sets width of element*/
-  border: 1px solid #124699; /*sets border of element*/
-  transition: all 0.6s; /*sets a transition (for hover effect)*/
+  border: 1px solid #A31F34; /*sets border of element*/
+  transition: all 0.1s; /*sets a transition (for hover effect)*/
   
   /* line-height: 50px; for this, it sets vertical alignment */
 
 }
 .rect:hover {
-  background: #124699; 
+  background: #A31F34; 
   color: white;
 }
 
