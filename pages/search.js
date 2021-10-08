@@ -1,6 +1,6 @@
 // search.js
 
-import Navinav from ".//components/navinav";
+import Navinav from "../components/navinav";
 import React from "react";
 
 export default function Search() {
