@@ -11,14 +11,14 @@ export default function Search() {
         <span style={{ color: "white", textAlign:"center"}}>Explore websites, people, and locations</span>
         
         <div>
-          <div class="shadow flex">
+          <div className="shadow flex">
             <input
-              class="w-full rounded p-2"
+              className="w-full rounded p-2"
               type="text"
               placeholder="What are you looking for?"
             />
-            <button class="bg-white w-auto flex  items-center text-black-500 p-2 hover:text-blue-400">
-              <i class="material-icons">
+            <button className="bg-white w-auto flex  items-center text-black-500 p-2 hover:text-blue-400">
+              <i className="material-icons">
                 <svg
                   className="site-nav__search-icon site-nav__search-icon--open"
                   width="26"
