@@ -1,4 +1,0 @@
-navbar.txt
-
-<span className="sr-only">Workflow</span>
-                            
