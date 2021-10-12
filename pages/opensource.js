@@ -2,11 +2,11 @@
 import Navinav from "../components/navinav";
 
 
-export default function Innovation() {
+export default function OpenSource() {
   return (
     <>
       <Navinav></Navinav>
-      <span>innovation</span>
+      <span>Commitment to Open Source</span>
     </>
   );
 }

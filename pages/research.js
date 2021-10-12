@@ -5,7 +5,7 @@ export default function Research() {
   return (
     <>
       <Navinav></Navinav>
-      <span>research</span>
+      <span>My commitment to research and development is one of my strongest traits. I believe </span>
     </>
   );
 }

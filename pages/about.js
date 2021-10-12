@@ -6,7 +6,7 @@ const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hal
 const navigation = [
   { name: "Education", href: "/education" },
   { name: "Research", href: "/research" },
-  { name: "Innovation", href: "/innovation" },
+  { name: "Open Source", href: "/opensource" },
   { name: "About cna", href: "/about" },
 ];
 
