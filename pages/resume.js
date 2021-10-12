@@ -1,7 +1,7 @@
 // resume.js
 
 import Navinav from "../components/navinav";
-import React from "react";
+// import React from "react";
 
 export default function Search() {
   return (

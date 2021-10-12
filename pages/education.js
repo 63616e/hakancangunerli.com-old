@@ -1,5 +1,5 @@
 // education.js
-import Navinav from ".//components/navinav";
+import Navinav from "../components/navinav";
 
 
 

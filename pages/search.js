@@ -7,7 +7,7 @@ export default function Search() {
   return (
     <>
       <Navinav></Navinav>
-      <div style={{ backgroundColor: "#004b51", height: "100vh" }}>
+      <div style={{ backgroundCoslor: "#004b51", height: "100vh" }}>
         <span style={{ color: "white", textAlign:"center"}}>Explore websites, people, and locations</span>
         
         <div>
