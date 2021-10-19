@@ -1,7 +1,12 @@
+// TODO: smooth scroll to search.js 
+
 import ReactTooltip from 'react-tooltip';
 import Link from "next/link";
 import Navinav from "..//components/navinav";
 const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
+// import { animateScroll } from "react-scroll";
+import Image from 'next/image';
+const picture = ('/9358D3D5-DF3F-4F59-86CB-56C3090F86E5_4_5005_c.jpeg');
 
 export default function Home() {
   return (
@@ -27,10 +32,8 @@ export default function Home() {
         <div className="flex">
           <ul>
             Top resources for
-            <li>_prospective students</li>
-            <li>_current students</li>
-            <li>_faculty & staff</li>
-            <li>_alumni</li>
+            <li>_prospective employers</li>
+            <li>_current employers </li>
             <li>
               <ReactTooltip
                 delayHide={1000}
@@ -78,7 +81,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div
+          
+        </div>
+        <div
             style={{ margin: "50px", textAlign: "left", background: "#A31F34" }}
           >
             <footer>
@@ -117,8 +122,8 @@ export default function Home() {
               <br />
             </footer>
           </div>
-        </div>
       </div>
+
 
       <div>
         <div style={{ float: "right" }}>
@@ -137,11 +142,25 @@ export default function Home() {
 
                 <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                   <div className="sm:text-center lg:text-left">
+                  <Image
+      // TODO: fix this
+      src={picture}
+      alt="Picture of the author"
+      width={200}
+      height={200}
+    />
+
+
+                    
                     <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                      
+                      
                       <span className="block text-black-600 xl:inline">
                         <div
                           dangerouslySetInnerHTML={{ __html: salutations }}
                         />
+
+                        
                       </span>
                     </h1>
                     <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
