@@ -6,6 +6,15 @@ export default function OpenSource() {
     <>
       <Navinav></Navinav>
       <span>Commitment to Open Source</span>
+<div> 
+  <p>
+    i'm very open to contributing to open source projects.
+  </p>
+
+  <a href="https://github.com/hakancangunerli/python-projects"><img src="https://gh-card.dev/repos/hakancangunerli/python-projects.svg"/> </a>
+  
+</div>
+
     </>
   );
 }

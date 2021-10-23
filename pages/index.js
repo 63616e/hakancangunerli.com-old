@@ -41,7 +41,7 @@ export default function Home() {
                 effect="solid"
                 html={true}
               />
-              <a data-tip="<a> https://www.cdc.gov/coronavirus/2019-ncov/index.html</a>">
+              <a data-tip="<a>cdc.gov</a>">
                 <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">
                   _Covid-19
                 </a>
