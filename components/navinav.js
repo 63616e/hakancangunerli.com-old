@@ -12,7 +12,7 @@ const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hal
 
 const navigation = [
   { name: "Education", href: "/education" },
-  { name: "Research", href: "/research" },
+  { name: "Research/Teaching", href: "/research" },
   { name: "Open Source", href: "/opensource" },
   { name: "Work Experience", href: "/workexp" },
   { name: "About cna", href: "/about" },
