@@ -22,7 +22,12 @@ const navigation = [
 export default function Navinav() {
   return (
     <>
-  
+   <center> 
+    <button className="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+    <span> please be advised that this project is in alpha. </span>
+</button>
+</center>
+    
       <Disclosure as="nav" className="bg-white-800">
         {({ open }) => (
           <>
