@@ -14,7 +14,7 @@ export default function About() {
           My name is Hakan Can Gunerli. Well, my government name is that, I go by John here.
         I'm passionate about the Human side of Computer Science, particularly working towards how humans interact with computers and computer-based systems like Robots and the internet. I'm also interested in the future of Artificial Intelligence, especially how it will impact the way we interact with computers.
         <br/>
-        Besides all that, I'm a big on reading, soccer (or football, depends where you're located) and buildings random things at midnight. also, big on memes. 
+        Besides all that, I'm a big on reading, linguistics, soccer - or football, depends where you're located - and buildings random things at midnight. also, big on memes. 
       </div>
       <br/>
       <div style={{paddingRight:"50px", paddingLeft:"50px"}}>

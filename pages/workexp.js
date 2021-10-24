@@ -1,11 +1,13 @@
-// research.js
+// workexp.js
 import Navinav from "../components/navinav";
 
-export default function OpenSource() {
+export default function WorkExp() {
   return (
     <>
+    {/* TODO: ADD WORK EXPERIENCE */}
       <Navinav></Navinav>
-      <span>Commitment to Open Source</span>
+      <span>Work experience</span>
+      <center> <div style={{color: "red"}} >will be updated soon</div></center>
     </>
   );
 }

@@ -2,7 +2,7 @@
 import Navinav from "../components/navinav";
 
 
-
+{/* TODO: ADD EDUCATION  */}
 export default function Education() {
   return (
     <>
