@@ -12,17 +12,23 @@ const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hal
 
 const navigation = [
   { name: "Education", href: "/education" },
-  { name: "Research", href: "/research" },
+  { name: "Research/Teaching", href: "/research" },
   { name: "Open Source", href: "/opensource" },
   { name: "Work Experience", href: "/workexp" },
   { name: "About cna", href: "/about" },
   { name: "Resume/CV", href: "/resume" },
+  { name:  <center> 
+    <button className="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+    <span> please be advised that this project is in alpha. </span>
+</button>
+</center>,  },
 ];
 
 export default function Navinav() {
   return (
     <>
   
+    
       <Disclosure as="nav" className="bg-white-800">
         {({ open }) => (
           <>
