@@ -31,7 +31,7 @@ const SelectionSearch = [
 
 export default function Home() {
   return (
-    <>
+    <>  
       <Navinav></Navinav>
       <div className={styles.splitScreen}>
         {/* sol */}
@@ -60,10 +60,10 @@ export default function Home() {
                     <About />
                   </span>
                 </p>
-                {/* shadow */}
+                
                 <br />
                 <br />
-                <Autocomplete
+                {/* <Autocomplete
                   freeSolo
                   id="free-solo-demo"
                   options={SelectionSearch}
@@ -71,7 +71,7 @@ export default function Home() {
                   renderInput={(option) => (
                     <TextField {...option} label="What are you looking for?" />
                   )}
-                />
+                /> */}
               </div>
             </form>
             <br />
