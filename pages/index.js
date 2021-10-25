@@ -3,6 +3,14 @@
 import ReactTooltip from "react-tooltip";
 import Link from "next/link";
 import Navinav from "..//components/navinav";
+import About from "../pages/about";
+import Contact from "../pages/contact";
+import Education from "../pages/education";
+import OpenSource from "../pages/opensource";
+import Research from "../pages/research";
+import Resume from "../pages/resume";
+import WorkExp from "../pages/workexp";
+
 const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '68 65 6c 6c 6f '];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 // import { animateScroll } from "react-scroll";
 import Image from "next/image";
@@ -34,6 +42,24 @@ export default function Home() {
                 <b style={{ fontSize: "20px" }}>
                   Explore websites people and locations
                 </b>
+                <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  <Image
+                    // TODO: fix this
+                    src={picture}
+                    alt="Picture of me!! "
+                    width={200}
+                    height={200}
+                  />
+
+                  <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <span className="block text-black-600">
+                      <div dangerouslySetInnerHTML={{ __html: salutations }} />
+                    </span>
+                  </h1>
+                  <span>
+                    <About />
+                  </span>
+                </p>
                 {/* shadow */}
                 <br />
                 <br />
@@ -41,14 +67,14 @@ export default function Home() {
                   freeSolo
                   id="free-solo-demo"
                   options={SelectionSearch}
-                  sx={{ width: 300 }}
+                  sx={{}}
                   renderInput={(option) => (
                     <TextField {...option} label="What are you looking for?" />
                   )}
                 />
               </div>
             </form>
-<br/>
+            <br />
             <div className="flex">
               <ul>
                 Top resources for
@@ -154,31 +180,13 @@ export default function Home() {
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
-                <Image
-                  // TODO: fix this
-                  src={picture}
-                  alt="Picture of me!! "
-                  width={200}
-                  height={200}
-                />
+                <Education />
 
-                <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block text-black-600">
-                    <div dangerouslySetInnerHTML={{ __html: salutations }} />
-                  </span>
-                </h1>
-                <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  <span>
-                    heyo, I am John! I'm a student at the University of Georgia
-                    with a double emphasis in Artificial Intelligence and Data
-                    Science. I've been in the CS ecosystem since 2016, and
-                    interned at Forbes 500 companies as well as various
-                    startups. I have taken various &nbsp; &nbsp;positions at
-                    bunch of places, still looking for extra jobs to get my
-                    creative juices flowing. You can get more info about that in
-                    my CV/Resume section.
-                  </span>
-                </p>
+                <Contact />
+                <OpenSource />
+                <Research />
+                <Resume />
+                <WorkExp />
 
                 <ReactTooltip
                   delayHide={1000}

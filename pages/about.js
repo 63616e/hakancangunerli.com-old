@@ -1,5 +1,5 @@
 // about.js
-import Navinav from "../components/navinav";
+
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
@@ -8,7 +8,7 @@ import Slider from '@mui/material/Slider';
 export default function About() {
   return (
     <>
-        <Navinav></Navinav>
+        
         <span>heyo! </span>
         <div style={{paddingRight:"50px", paddingLeft:"50px"}}>
           My name is Hakan Can Gunerli. Well, my government name is that, I go by John here.
@@ -22,7 +22,7 @@ export default function About() {
 
 </div>
 
-<center><img src="https://i.kym-cdn.com/entries/icons/original/000/034/135/adios.jpg" style={{width:"50%", height:"auto"}}></img></center>
+
 For more info, you can contact me at <a href="mailto:hakancangunerli@uga.edu"> hakancangunerli at uga dot edu </a> 
 
     </>

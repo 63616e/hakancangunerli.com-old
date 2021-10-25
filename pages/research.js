@@ -1,11 +1,12 @@
 // research.js
-import Navinav from "../components/navinav";
+
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { fontSize } from "@mui/system";
 
 const bull = (
   <Box
@@ -19,15 +20,15 @@ const bull = (
 export default function Research() {
   return (
     <>
-      <Navinav></Navinav>
-      <div style={{ padding: "10px" }}>
+      
+      <div style={{ padding: "10px" ,fontSize:"30px" }}>
         <span>
           My commitment to research and development is one of my strongest
           traits. I believe strongly that Research and development is the life
           supply of any startup/company that does Computer Software.{" "}
         </span>
       </div>
-      <div style={{ padding: "10px" }}>
+      <div style={{ padding: "10px" ,fontSize:"30px"}}>
         <p>
           {" "}
           I currently work at these Research Labs at the University of Georgia,
@@ -35,7 +36,7 @@ export default function Research() {
         </p>
       </div>
 
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex",  margin: "auto", width: "60%" }}>
         <Card sx={{ maxWidth: 275 }}>
           <CardContent>
             <Typography variant="h5" component="div">
@@ -88,29 +89,29 @@ export default function Research() {
         </Card>
       </div>
 
-      <div style={{ padding: "10px" }}>
+      <div style={{ padding: "10px" ,fontSize:"30px"}}>
         <p>
           {" "}
           I am also big into teaching, here are courses/places I've taught.{" "}
         </p>
-        
       </div>
 
-
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" , margin: "auto", width: "60%" }}>
         <Card sx={{ maxWidth: 275 }}>
           <CardContent>
             <Typography variant="h5" component="div">
-              theCoderSchool 
+              theCoderSchool
               <img src="https://www.thecoderschool.com/locations/img/logostacked-white-shadow.png" />
               <br />
               <br />
-
             </Typography>
             <Typography variant="body2">
-            I assessed 50+ students' progress throughout the year and design projects with other staff to create an immersive teaching experience. Taught web development, web design, mobile development, graphical user interface design, and web application design.
-<br />
-              
+              I assessed 50+ students' progress throughout the year and design
+              projects with other staff to create an immersive teaching
+              experience. Taught web development, web design, mobile
+              development, graphical user interface design, and web application
+              design.
+              <br />
             </Typography>
           </CardContent>
         </Card>
@@ -120,13 +121,16 @@ export default function Research() {
           <CardContent>
             <Typography variant="h5" component="div">
               Istanbul Technical University: Robotics Club
-              <center> <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHnnrgJcQ3QvA/company-logo_200_200/0/1576324294364?e=1643241600&v=beta&t=QelswduamNqPDiNVwTp9o520BBT7H5PmPGbb9OHnZJw" /></center>
+              <center>
+                {" "}
+                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHnnrgJcQ3QvA/company-logo_200_200/0/1576324294364?e=1643241600&v=beta&t=QelswduamNqPDiNVwTp9o520BBT7H5PmPGbb9OHnZJw" />
+              </center>
             </Typography>
             <Typography variant="body2">
-            <br />
-              I'm currently teaching Introduction to C++ and Data Structures at the Istanbul Technical University's Robotics Club.
               <br />
-              
+              I'm currently teaching Introduction to C++ and Data Structures at
+              the Istanbul Technical University's Robotics Club.
+              <br />
             </Typography>
           </CardContent>
         </Card>
@@ -140,14 +144,12 @@ export default function Research() {
             <br />
             <br />
             <Typography variant="body2">
-             I taught introduction to Robotics, and LEGO Mindstorms fundamentals at Sunshine STEM Academy.
+              I taught introduction to Robotics, and LEGO Mindstorms
+              fundamentals at Sunshine STEM Academy.
             </Typography>
           </CardContent>
         </Card>
       </div>
-
-
-
     </>
   );
 }
