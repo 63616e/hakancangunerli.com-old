@@ -120,18 +120,20 @@
   }
 }
 
-
 .splitScreen {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.topPane {
-  grid-column: 1;
-  grid-row: 1;
-}
-.bottomPane {
-  grid-column: 2;
+@media screen and (min-width: 600px) {
+  .topPane {
+    grid-column: 1;
     grid-row: 1;
+    position: fixed;
+  }
+  .bottomPane {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }

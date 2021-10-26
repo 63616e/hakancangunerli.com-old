@@ -1,5 +1,5 @@
 // research.js
-import Navinav from "../components/navinav";
+
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -17,9 +17,9 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function OpenSource() {
   return (
     <>
-      <Navinav></Navinav>
+      
       <div>
-        <p style={{ padding: "10px" }}>
+        <p style={{  }}>
           i'm very open to contributing to open source projects. I'm quite
           active on GitHub, and I'm always looking for new projects to
           contribute to. Generally, I build multiple projects with varying
