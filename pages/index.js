@@ -2,7 +2,6 @@
 
 import ReactTooltip from "react-tooltip";
 import Link from "next/link";
-import Navinav from "..//components/navinav";
 import About from "../pages/about";
 import Contact from "../pages/contact";
 import Education from "../pages/education";
@@ -18,8 +17,6 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { Disclosure, Menu } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
-// const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '你好!'];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 
 const navigation = [
   { name: "Education", href: "#education" },
@@ -65,42 +62,35 @@ export default function Home() {
                     )}
                   </Disclosure.Button>
                 </div>
-
-                <div style={{position:"fixed"}}> 
-                <Link href="/">
-
-                      <span className="red-c-a">
-                        c<span className="gray-n">n</span>
-                        <span className="red-c-a">a</span>
-                      </span>
-                      
-
-                    
-                  </Link>
-
-                  </div>            
-                      
+                <div className="md:no-underline md:hover:underline hover:text-red-500" style={{ position: "fixed" }}>
                   <Link href="/">
-                    <div style={{  }}>
-                      <span className="red-c-a">
-                        c<span className="gray-n">n</span>
-                        <span className="red-c-a">a</span>
-                      </span>
-                      
-                    </div>
-                    
+                    <span className="red-c-a">
+                      c<span className="gray-n">n</span>
+                      <span className="red-c-a">a</span>
+                    </span>
                   </Link>
-                  &nbsp;&nbsp;
-                  <div className="hidden sm:block sm:ml-6">
-                    <div className="flex space-x-4">
-                      {navigation.map((item) => (
-                        <a key={item.name} href={item.href} to={item.href}>
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
+                </div>
+                <Link href="/">
+                  <div style={{}}>
+                    <span className="red-c-a">
+                      c<span className="gray-n">n</span>
+                      <span className="red-c-a">a</span>
+                    </span>
                   </div>
-              
+                </Link>
+                &nbsp;&nbsp;
+                <div className="hidden sm:block sm:ml-6">
+                  
+                  
+                  
+                  <div className="flex space-x-4" >
+                    {navigation.map((item) => (
+                      <a className ="md:no-underline md:hover:underline "  key={item.name} href={item.href} to={item.href}>
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   {/* Profile dropdown */}
                   <Menu as="div" className="ml-3 relative">
