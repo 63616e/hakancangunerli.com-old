@@ -19,7 +19,7 @@ export default function OpenSource() {
     <>
       
       <div>
-        <p style={{ padding: "10px" }}>
+        <p style={{  }}>
           i'm very open to contributing to open source projects. I'm quite
           active on GitHub, and I'm always looking for new projects to
           contribute to. Generally, I build multiple projects with varying

@@ -21,14 +21,14 @@ export default function Research() {
   return (
     <>
       
-      <div style={{ padding: "10px" ,fontSize:"30px" }}>
+      <div style={{ }}>
         <span>
           My commitment to research and development is one of my strongest
           traits. I believe strongly that Research and development is the life
           supply of any startup/company that does Computer Software.{" "}
         </span>
       </div>
-      <div style={{ padding: "10px" ,fontSize:"30px"}}>
+      <div style={{ }}>
         <p>
           {" "}
           I currently work at these Research Labs at the University of Georgia,
@@ -36,8 +36,8 @@ export default function Research() {
         </p>
       </div>
 
-      <div style={{ display: "flex",  margin: "auto", width: "60%" }}>
-        <Card sx={{ maxWidth: 275 }}>
+      <div style={{ display: "flex",  margin: "auto",  }}>
+        <Card sx={{ }}>
           <CardContent>
             <Typography variant="h5" component="div">
               Heterogeneous Robotics Research Lab
@@ -96,7 +96,7 @@ export default function Research() {
         </p>
       </div>
 
-      <div style={{ display: "flex" , margin: "auto", width: "60%" }}>
+      <div style={{ display: "flex" , margin: "auto",  }}>
         <Card sx={{ maxWidth: 275 }}>
           <CardContent>
             <Typography variant="h5" component="div">
