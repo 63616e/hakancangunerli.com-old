@@ -89,7 +89,7 @@ export default function Research() {
         </Card>
       </div>
 
-      <div style={{ padding: "10px" ,fontSize:"30px"}}>
+      <div style={{ padding: "10px"}}>
         <p>
           {" "}
           I am also big into teaching, here are courses/places I've taught.{" "}

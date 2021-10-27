@@ -10,7 +10,6 @@ import Research from "../pages/research";
 import Resume from "../pages/resume";
 import WorkExp from "../pages/workexp";
 
-const salutations = `<script>var example = ['hello!', 'merhaba!','bonjour!','hallo!','hola!', '!שלום', '68 65 6c 6c 6f '];textSequence(0);function textSequence(i) {if (example.length > i){setTimeout(function() {document.getElementById("sequence").innerHTML = example[i];textSequence(++i);}, 1000);} else if (example.length == i) {textSequence(0);}}</script> <div id="sequence"></div>`;
 const picture = "/9358D3D5-DF3F-4F59-86CB-56C3090F86E5_4_5005_c.jpeg";
 import styles from "../styles/Home.module.css";
 import TextField from "@mui/material/TextField";
@@ -25,15 +24,6 @@ const navigation = [
   { name: "Work Experience", href: "#workexp" },
   { name: "About cna", href: "#about" },
   { name: "Resume/CV", href: "#resume" },
-  {
-    name: (
-      <center>
-        <button className="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-          <span> please be advised that this project is in alpha. </span>
-        </button>
-      </center>
-    ),
-  },
 ];
 const SelectionSearch = [
   { label: "Education" },
@@ -62,7 +52,10 @@ export default function Home() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="md:no-underline md:hover:underline hover:text-red-500" style={{ position: "fixed" }}>
+                <div
+                  className="md:no-underline md:hover:underline hover:text-red-500"
+                  style={{ position: "fixed" }}
+                >
                   <Link href="/">
                     <span className="red-c-a">
                       c<span className="gray-n">n</span>
@@ -80,12 +73,14 @@ export default function Home() {
                 </Link>
                 &nbsp;&nbsp;
                 <div className="hidden sm:block sm:ml-6">
-                  
-                  
-                  
-                  <div className="flex space-x-4" >
+                  <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a className ="md:no-underline md:hover:underline "  key={item.name} href={item.href} to={item.href}>
+                      <a
+                        className="md:no-underline md:hover:underline "
+                        key={item.name}
+                        href={item.href}
+                        to={item.href}
+                      >
                         {item.name}
                       </a>
                     ))}
@@ -163,13 +158,6 @@ export default function Home() {
                     )}
                   />
                 </b>
-                <p className="text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    <span className="block text-black-600">
-                      <div dangerouslySetInnerHTML={{ __html: salutations }} />
-                    </span>
-                  </h1>
-                </p>
               </div>
             </form>
             <br />
@@ -223,6 +211,10 @@ export default function Home() {
                   </span>
                 </Link>
               </div>
+              <br />
+              <br />
+              <br />
+              <br />
               <br />
               <div style={{ textAlign: "left", background: "#A31F34" }}>
                 <footer>
@@ -311,18 +303,44 @@ export default function Home() {
               <div id="WorkExp">
                 {" "}
                 <WorkExp />{" "}
+                <div style={{ textAlign: "left", background: "#A31F34" }}>
+                <footer>
+                  <b>Hakan Can Gunerli</b>
+                  <br />
+                  100 Fox Rd, Athens,GA,USA <br />
+                  <a href="https://example.com">
+                    <u>Visit</u>{" "}
+                  </a>
+                  <a href="https://example.com">
+                    <u> Map</u>{" "}
+                  </a>
+                  <a href="https://example.com">
+                    <u>Events</u>{" "}
+                  </a>
+                  <a href="https://example.com">
+                    <u>People</u>{" "}
+                  </a>
+                  <br></br>
+                  <a href="https://example.com">
+                    <u>Career</u>{" "}
+                  </a>
+                  <Link href="/contact.js">
+                    <a>
+                      <u>Contact</u>{" "}
+                    </a>
+                  </Link>
+                  <Link href="/privacy">
+                    <a>
+                      <u>Privacy</u>{" "}
+                    </a>
+                  </Link>
+                  <a href="https://example.com">
+                    <u>Accessibility</u>{" "}
+                  </a>
+                  <br />
+                </footer>
               </div>
-
-              <ReactTooltip
-                delayHide={1000}
-                backgroundColor="#000000"
-                effect="solid"
-                html={true}
-              />
-              <a data-tip='<a href="https://web.mit.edu"> web.mit.edu</a>'>
-                test hover system
-              </a>
-              {/* TODO: HYPERLINK FUNCTIONALITY */}
+              </div>
             </div>
           </div>
         </div>
