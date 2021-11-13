@@ -16,9 +16,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import { Disclosure, Menu } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-// TODO: you have your own handwriting font, use that here.
-
-export default function Home() {
+export default function Readable() {
   return (
     <>
       <div className="split left">
@@ -93,7 +91,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="centered-handwriting">
+      <div className="centered">
         <div id="example1">
           <div className="hello">
             <p> From: hakan can gunerli </p>
@@ -113,7 +111,7 @@ export default function Home() {
           </div>
 
           <br />
-          <div className="center-handwriting">
+          <div className="center">
             <p>
               {" "}
               i am a third-year student at georgia institute of technology
@@ -127,7 +125,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="center-handwriting">
+          <div className="center">
             <p>
               <br />i love the work i do. so, i've worked all types of places
               ranging from <a href="https://www.peero.io">startups</a> to{" "}
@@ -140,7 +138,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="center-handwriting">
+          <div className="center">
             <p>
               <br />
               besides work, i try to contribute to the communities i care about
@@ -150,21 +148,14 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="center-handwriting">
+          <div className="center">
             <p>
               <br />
-              when i have the freetime to do things, i'd usually be dealing with
+              when i have the free time to do things, i'd usually be dealing with
               things that are related to linguistics and building funny/weird
               things. you might see five projects finished in the course of a
               day in my github one day, that is quite normal, don't worry about
               it :)
-              <br />
-              <br />
-              <Link href="./readable" passHref>
-                <Button variant="contained" color="primary">
-                  If you can't read text above, click here.{" "}
-                </Button>
-              </Link>
             </p>
           </div>
         </div>
