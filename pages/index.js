@@ -34,7 +34,7 @@ export default function Home() {
         <div className="centered">
           <Box component="p" sx={{ p: 2.5, bgcolor: "black" }}>
             <Link href="https://github.com/hakancangunerli/python-projects">
-              <Button>My small Python Projects</Button>
+              <Button>Small Python Projects</Button>
             </Link>
           </Box>
 
@@ -44,50 +44,46 @@ export default function Home() {
             </Link>
           </Box>
 
-          <Box component="p" sx={{ p: 2.5, bgcolor: "lightblue" }}>
-            <Link href="https://github.com/hakancangunerli/robot_packages">
-              <Button> Robotics code</Button>
-            </Link>
-          </Box>
-
+          <center>
+            {" "}
+            <Box component="p" sx={{ p: 2.5, bgcolor: "lightblue" }}>
+              <Link href="https://github.com/hakancangunerli/robot_packages">
+                <Button> Robotics code</Button>
+              </Link>
+            </Box>
+          </center>
           <Box component="p" sx={{ p: 2.5, bgcolor: "lightgreen" }}>
             <Link href="https://github.com/hakancangunerli/kripto">
-              <Button>Cryptocurrency dashboard project </Button>
+              <Button>Crypto dashboard project </Button>
             </Link>
           </Box>
 
-          <Box component="p" sx={{ p: 2.5, bgcolor: "lightyellow" }}>
-            <Link
-              href="https://github.com/hakancangunerli/tanakh-quoter
+          <center>
+            <Box component="p" sx={{ p: 2.5, bgcolor: "lightyellow" }}>
+              <Link
+                href="https://github.com/hakancangunerli/tanakh-quoter
 "
-            >
-              <Button>Tanakh quoter </Button>
-            </Link>
-          </Box>
-
-          <Box component="p" sx={{ p: 2.5, bgcolor: "purple" }}>
-            <Link
-              href="https://github.com/hakancangunerli/ayar-yukselt
+              >
+                <Button>Tanakh quoter </Button>
+              </Link>
+            </Box>
+          </center>
+          <center>
+            <Box component="p" sx={{ p: 2.5, bgcolor: "purple" }}>
+              <Link
+                href="https://github.com/hakancangunerli/ayar-yukselt
 "
-            >
-              <Button>Ayaryukselt </Button>
-            </Link>
-          </Box>
-
+              >
+                <Button>Ayaryukselt </Button>
+              </Link>
+            </Box>
+          </center>
           <Box component="p" sx={{ p: 2.5, bgcolor: "darkblue" }}>
             <Link
               href="https://github.com/hakancangunerli/gsu-code
 "
             >
               <Button>GSU Coding Projects </Button>
-            </Link>
-          </Box>
-          <Box component="p" sx={{ p: 2.5, bgcolor: "red" }}>
-            <Link
-              href="https://github.com/hakancangunerli/uga-code
-"
-            >
-              <Button>UGA Coding Projects </Button>
             </Link>
           </Box>
         </div>
@@ -116,14 +112,10 @@ export default function Home() {
           <div className="center-handwriting">
             <p>
               {" "}
-              i am a third-year student at georgia institute of technology
-              pursuing a bachelor's of science in computer science with threads
-              in people and devices. i am interested in human-computer
-              interaction and/or robotics. previously, i was a student at the
-              university of georgia where i did three research assistantships (
-              one under dr.parasuraman at the herolab robotics, one at the
-              department of cs under dr.quinn's ciliaweb project and finally one
-              under college of engineering dr.camelio)
+              i am a third-year student at tech pursuing a bachelor's of science
+              in computer science with threads in people and devices. i am
+              interested in human-computer interaction and/or robotics.
+              previously. 
             </p>
           </div>
 

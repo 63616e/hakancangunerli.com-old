@@ -7,10 +7,11 @@
 .center-handwriting {
   margin: auto;
   width: 60%;
-  text-align: center;
   padding: 0px;
   font-family: 'myFirstFont';
-  font-size: 15px;
+  font-size: 17px;
+  text-indent: 30px;
+  overflow-y: scroll;
   
 }
 .center {
