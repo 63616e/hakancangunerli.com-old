@@ -54,8 +54,10 @@ const useM = (md, option) => {
       <svg
         ref={ref}
         style={{
-          width: "1280",
-          height: "900",
+          background: 'rgb(32,33,36)',
+          color:'rgb(240,248,255)',
+          width: "100%",
+          height: "100%",
           display: "block",
           alignSelf: "flex-start",
           margin: "auto",
