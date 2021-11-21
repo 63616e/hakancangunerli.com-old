@@ -30,7 +30,7 @@ const markdown = `
 ## Skills/Interests <!-- fold -->
 ### Human-Computer Interaction
 ### Robotics
-### Random Software Development stuff ¯\_(ツ)_/¯
+### Random Software Development stuff ツ
 ## Contact <!-- fold -->
 ### [Github](github.com/hakancangunerli)
 ### [LinkedIn](linkedin.com/in/hakancangunerli)
