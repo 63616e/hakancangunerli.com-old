@@ -4,10 +4,8 @@ import * as markmap from "markmap-view";
 import { useEffect, useRef } from "react";
 const { Markmap, loadCSS, loadJS } = markmap;
 document.title = "Hakan Can Personal Website";
-const splitHeights = [1, 2, 3];
-const i = 2;
-const sY = splitHeights.slice(0, i).reduce((p, c) => p + c, 0);
-// console.log(sY);
+
+
 
 const transformer = new Transformer();
 
