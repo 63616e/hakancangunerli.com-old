@@ -5,40 +5,53 @@ import { useEffect, useRef } from "react";
 const { Markmap, loadCSS, loadJS } = markmap;
 document.title = "Hakan Can Personal Website";
 
-
-
 const transformer = new Transformer();
 
 const markdown = `
-# heyo i'm hakan can gunerli! 
-## Work Experience 
-### Peero 
-### theCoderSchool
-### Turkiye Is Bankasi (Intern)
 
-## Research Experience 
+# hakan can gunerli
+## Skills/Interests 
+### Human-Computer Interaction
+### Robotics
+### Random Software Development stuff ツ
+
+## Work Experience  <!-- fold -->
+### Peero <!-- fold -->
+- (January to August 2021)
+  Head of Product
+### theCoderSchool <!-- fold -->
+- (2019-2021)
+  Course Instructor
+### Turkiye Is Bankasi  <!-- fold -->
+- (September to October 2020)
+  SWE Internship
+## Research Experience <!-- fold -->
 ### Quinn Research Group (UGA)
 ### Heterogeneous Robotics Lab (UGA)
 ### College of Engineering (UGA)
 
 ## Education 
-### Georgia Institute of Technology
-### University of Georgia
-### Georgia State University
-## Skills/Interests <!-- fold -->
-### Human-Computer Interaction
-### Robotics
-### Random Software Development stuff ツ
+### <span style="color:#B3A369">Georgia Institute of Technology </span>  
+- (2021-...)
+  Emphasis in People and Devices
+
+### <span style="color:#BA0C2F">University of Georgia </span> 
+- (2021)
+  Emphasis in Artificial Intelligence and Data Science
+### <span style="color:#0039A6">Georgia State University </span> 
+- (2019-2021)
+  Emphasis in Data Science
 ## Contact <!-- fold -->
 ### [Github](github.com/hakancangunerli)
 ### [LinkedIn](linkedin.com/in/hakancangunerli)
 ### [Email](hakancangunerli@engineer.com)
-## Resume <!-- fold -->
+## Resume 
 ### [Right here.](https://drive.google.com/drive/folders/1oGVqzsSogTQFBSXsNNQk5X5MIUXGjVvI?usp=sharing)
 `;
 // 1. transform markdown
 
 const useM = (md, option) => {
+
   const ref = useRef(null);
   useEffect(() => {
     ref.current.innerHTML = "";
@@ -49,27 +62,36 @@ const useM = (md, option) => {
     Markmap.create(ref.current, option, root);
   }, [md, option]);
   return (
-    <center>
-      {" "}
+
       <svg
         ref={ref}
         style={{
-          background: 'rgb(32,33,36)',
-          color:'rgb(240,248,255)',
+          background: "rgb(32,33,36)",
+          color: "rgb(240,248,255)",
           width: "100%",
           height: "100%",
           display: "block",
           alignSelf: "flex-start",
-          margin: "auto",
-          position:'fixed', 
-          top:'0',
-          left:'0'
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          overflow: "scroll",
+          overflowX: "hidden",
+          overflowY: "scroll",
+          padding: "10px",
+          borderRadius: "10px",
         }}
-      ></svg>{" "}
-    </center>
+      ></svg>
+    
   );
 };
 export default function App() {
+  
   const M = useM(markdown);
-  return <div>{M}</div>;
+  return(
+  <>
+  <div>{M}</div></>
+    );
+
 }
