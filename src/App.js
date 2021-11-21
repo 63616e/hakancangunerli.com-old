@@ -11,17 +11,17 @@ const transformer = new Transformer();
 
 const markdown = `
 # heyo i'm hakan can gunerli! 
-## Work Experience <!-- fold -->
+## Work Experience 
 ### Peero 
 ### theCoderSchool
 ### Turkiye Is Bankasi (Intern)
 
-## Research Experience <!-- fold -->
+## Research Experience 
 ### Quinn Research Group (UGA)
 ### Heterogeneous Robotics Lab (UGA)
 ### College of Engineering (UGA)
 
-## Education <!-- fold -->
+## Education 
 ### Georgia Institute of Technology
 ### University of Georgia
 ### Georgia State University
@@ -55,10 +55,13 @@ const useM = (md, option) => {
         ref={ref}
         style={{
           width: "1280",
-          height: "700",
+          height: "900",
           display: "block",
           alignSelf: "flex-start",
           margin: "auto",
+          position:'fixed', 
+          top:'0',
+          left:'0'
         }}
       ></svg>{" "}
     </center>
