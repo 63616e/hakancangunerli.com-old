@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "id": "hakan can gunerli",
+      "group": 8
+    },
+    {
+      "id": "skills",
+      "group": 7
+    },
+    {
+      "id": "human-computer interaction",
+      "group": 2
+    },
+    {
+      "id": "robotics",
+      "group": 2
+    },
+    {
+      "id": "random software development",
+      "group": 2
+    },
+    {
+      "id": "education",
+      "group": 7
+    },
+    {
+      "id": "georgia institute of technology",
+      "group": 3
+    },
+    {
+      "id": "university of georgia",
+      "group": 3
+    },
+    {
+      "id": "georgia state university",
+      "group": 3
+    },
+    {
+      "id": "research experience",
+      "group": 7
+    },
+    {
+      "id": "Heterogeneous Robotics Lab (UGA)",
+      "group": 8
+    },
+    {
+      "id": "Quinn Research Group (UGA)",
+      "group": 8
+    },
+    {
+      "id": "College of Engineering (UGA)",
+      "group": 8
+    },
+    {
+      "id": "industry experience",
+      "group": 7
+    },
+    {
+      "id": "Peero",
+      "group": 6
+    },
+    {
+      "id": "Turkiye Is Bankasi",
+      "group": 6
+    },
+    {
+      "id": "theCoderSchool",
+      "group": 6
+    }
+  ],
+  "links": [
+    {
+      "source": "hakan can gunerli",
+      "target": "skills",
+      "value": 1
+    },
+    {
+      "source": "skills",
+      "target": "human-computer interaction",
+      "value": 1
+    },
+    {
+      "source": "skills",
+      "target": "robotics",
+      "value": 1
+    },
+    {
+      "source": "skills",
+      "target": "random software development",
+      "value": 1
+    },
+    {
+      "source": "hakan can gunerli",
+      "target": "education",
+      "value": 1
+    },
+    {
+      "source": "education",
+      "target": "georgia institute of technology",
+      "value": 1
+    },
+    {
+      "source": "education",
+      "target": "university of georgia",
+      "value": 1
+    },
+    {
+      "source": "education",
+      "target": "georgia state university",
+      "value": 1
+    },
+    {
+      "source": "hakan can gunerli",
+      "target": "research experience"
+    },
+    {
+      "source": "research experience",
+      "target": "Heterogeneous Robotics Lab (UGA)",
+      "value": 1
+    },
+    {
+      "source": "research experience",
+      "target": "Quinn Research Group (UGA)",
+      "value": 1
+    },
+    {
+      "source": "research experience",
+      "target": "College of Engineering (UGA)",
+      "value": 1
+    },
+    {
+      "source": "hakan can gunerli",
+      "target": "industry experience"
+    },
+    {
+      "source": "industry experience",
+      "target": "Peero",
+      "value": 1
+    },
+    {
+      "source": "industry experience",
+      "target": "Turkiye Is Bankasi",
+      "value": 1
+    },
+    {
+      "source": "industry experience",
+      "target": "theCoderSchool",
+      "value": 1
+    }
+  ]
+}

@@ -1,20 +1,22 @@
 {
-  "name": "hakancangunerli.com",
+  "name": "graph-resuem",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "markmap": "^0.6.1",
-    "markmap-lib": "^0.11.6",
-    "markmap-view": "^0.2.6",
+    "bezier-js": "^4.1.1",
+    "force-graph": "^1.42.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-force-graph-2d": "^1.23.8",
+    "react-force-graph-3d": "^1.21.10",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "bezier-js": "4.0.3"
   }
 }
