@@ -9,9 +9,9 @@ const myData ={
         {"id": "robotics", "group": 2},
         {"id": "random software development", "group": 2},
         {"id": "education", "group": 3},
-        {"id": "georgia institute of technology", "group":3},
-        {"id": "university of georgia", "group":3},
-        {"id": "georgia state university", "group":3}
+        {"id": "georgia institute of technology: (2021-2023)", "group":3},
+        {"id": "university of georgia (2020-2021)", "group":3},
+        {"id": "georgia state university (2019-2020)", "group":3}
 
       ],
       "links": [
@@ -20,9 +20,9 @@ const myData ={
         {"source": "skills", "target": "robotics", "value": 1},
         {"source": "skills", "target": "random software development", "value": 1},
         {"source": "hakan can gunerli", "target": "education", "value": 1},
-        {"source": "education", "target": "georgia institute of technology", "value": 1},
-        {"source": "education", "target": "university of georgia", "value": 1},
-        {"source": "education", "target": "georgia state university", "value": 1}
+        {"source": "education", "target": "georgia institute of technology: (2021-2023)", "value": 1},
+        {"source": "education", "target": "university of georgia (2020-2021)", "value": 1},
+        {"source": "education", "target": "georgia state university (2019-2020)", "value": 1}
       ]
   };
 
