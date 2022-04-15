@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 // import useSound from 'use-sound';
 import './App.css';
 // import { Link, NavLink } from 'react-router-dom'; will be used in the future for navigation 
 import { Nav, Navbar, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+// eslint-disable-next-line
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+// eslint-disable-next-line
 const can = 'can.mp3';
+// eslint-disable-next-line
 const cna = 'cna.mp3';
 function playCan() {
   var audio = new Audio('can.mp3');
