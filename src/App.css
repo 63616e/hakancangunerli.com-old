@@ -1,13 +1,40 @@
 .App {
   text-align: left;
-  font-family: 'Consolas', 'Courier New', monospace;
+  /* TODO: change fonts to modern design guidelines  */
+  font-family: 'Helvetica', 'Courier New', monospace;
 }
 
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    font-size: calc(3em + 2vmin);
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.experience-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #B3A369; 
+
+}
+
+.projects-content-svgs{
+  /* there's no need to write anything here yet */
+}
+
+.projects-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
 }
 
 .centered{
