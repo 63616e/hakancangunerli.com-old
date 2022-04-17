@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import useSound from 'use-sound';
 // import './App.css';
 // import { Link, NavLink } from 'react-router-dom'; will be used in the future for navigation 
-import { Nav, Navbar, Container, Button, Col, Row, Card } from 'react-bootstrap';
+import { Nav, Navbar, Container, Col, Row, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
