@@ -58,7 +58,7 @@ export class Home extends Component {
         </Nav.Item>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-            <Nav.Link href="/blog">Blog</Nav.Link>
+            <Nav.Link href="https://marmalade-clementine-4c7.notion.site/Welcome-to-John-s-Blog-db8f4b8c138140ada5839ba9a02c7a24">Blog</Nav.Link>
           <Navbar.Text>
             
             <Nav.Item>
