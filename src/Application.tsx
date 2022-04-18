@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Blog from './pages/Blog';
+const Blog = 'https://marmalade-clementine-4c7.notion.site/Welcome-to-John-s-Blog-db8f4b8c138140ada5839ba9a02c7a24';
 
 function Application() {
   return (
@@ -11,7 +11,6 @@ function Application() {
     <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-      <Route path="/blog" element={<Blog />} />
     </Routes>
     </BrowserRouter>
   );
